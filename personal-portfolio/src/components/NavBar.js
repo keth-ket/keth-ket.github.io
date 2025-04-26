@@ -1,11 +1,11 @@
 
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
+import logo from "../assets/img/png_logo.svg";
 
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import linkedinIcon from "../assets/img/nav-icon1.svg";
+import githubIcon from "../assets/img/github.svg";
+// import navIcon3 from "../assets/img/nav-icon3.svg";
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
@@ -30,9 +30,9 @@ export const NavBar = () => {
 
   return (
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
-      <Container>
+      <Container fluid>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" className="logo-button"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggle-icon"></span>
@@ -71,15 +71,15 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
-                <img src={navIcon1} alt="" />
+              <a href="https://www.linkedin.com/in/alice-nguyen-bb0399277/">
+                <img src={linkedinIcon} alt="" />
               </a>
-              <a href="#">
-                <img src={navIcon2} alt="" />
+              <a href="https://github.com/keth-ket">
+                <img src={githubIcon} alt="" />
               </a>
-              <a href="#">
+              {/* <a href="#">
                 <img src={navIcon3} alt="" />
-              </a>
+              </a> */}
             </div>
             <button className="vvd" onClick={() => console.log("connect")}>
               <span>Let's Connect</span>

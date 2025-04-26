@@ -83,13 +83,14 @@ p.danger {
 }
 /************ Navbar Css ************/
 nav.navbar {
-  padding: 18px 0;
+  padding: 18px 100px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
 }
+
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
@@ -150,6 +151,7 @@ span.navbar-text {
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
+
 .navbar-text button {
   font-weight: 700;
   color: #fff;
@@ -228,6 +230,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
+}
+
+.logo-button {
+  width: 120px;
+  height: auto;
+  animation: updown 3s linear infinite;
+  animation-play-state: running;
+}
+
+.logo-button:hover {
+  animation-play-state: paused;
 }
 
 /************ Banner Css ************/
