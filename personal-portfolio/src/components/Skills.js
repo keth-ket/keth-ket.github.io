@@ -29,7 +29,7 @@ export const Skills = () => {
         <Row>
           <Col>
             <div className="skill-bx">
-              <h2>Skills</h2>
+              <h2>My Tech Collection</h2>
               <br></br>
 
               <Carousel
@@ -38,24 +38,43 @@ export const Skills = () => {
                 className="skill-slider"
               >
                 <div className="item">
-                  <img src={""} alt="image" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="react"/>
+
                   <h5>Web Development</h5>
                 </div>
                 <div className="item">
-                  <img src={""} alt="image" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
                   <h5>Web Development</h5>
                 </div>
                 <div className="item">
-                  <img src={""} alt="image" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
                   <h5>Web Development</h5>
                 </div>
                 <div className="item">
-                  <img src={""} alt="image" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+
                   <h5>Web Development</h5>
                 </div>
                 <div className="item">
-                  <img src={""} alt="image" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
+
                   <h5>Web Development</h5>
+                </div>
+                <div className="item">                
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />              
+                    <h5>Programming</h5>         
+                </div>
+                <div className="item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+                  <h5>Programming</h5>
+                </div>
+                <div className="item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                  <h5>Programming</h5>
+                </div>
+                <div className="item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                <h5>Web Development</h5>
                 </div>
               </Carousel>
             </div>
